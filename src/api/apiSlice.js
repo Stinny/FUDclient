@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import Cookies from 'js-cookie';
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: 'http://localhost:5000/api',
+  baseUrl: 'https://fileupdown.herokuapp.com//api',
   prepareHeaders: (headers) => {
     const aToken = Cookies.get('aToken') ? Cookies.get('aToken') : null;
 
